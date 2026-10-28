@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chetrichar-lorapeft_jd186"
+version = "0.1.0"
+description = "从输入中抽取数值，计算LoRA 与参数高效微调研究员·敏感信息的脱敏与回填相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "chetrichar" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://chetrichar.github.io"
+Repository = "https://github.com/chetrichar/lorapeft_jd186"
+Issues = "https://github.com/chetrichar/lorapeft_jd186/issues"
+
+[project.scripts]
+lorapeft_jd186 = "lorapeft_jd186:main"
+
+[tool.setuptools]
+py-modules = ["lorapeft_jd186"]
